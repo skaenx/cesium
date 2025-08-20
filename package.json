@@ -153,9 +153,5 @@
       "markdownlint",
       "prettier --write"
     ]
-  },
-  "workspaces": [
-    "packages/engine",
-    "packages/widgets"
-  ]
+  }
 }
