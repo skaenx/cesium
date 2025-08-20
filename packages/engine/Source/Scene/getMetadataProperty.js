@@ -27,8 +27,6 @@ function getMetadataProperty(structuralMetadata, className, propertyName) {
   }
   const propertyTextures = structuralMetadata.propertyTextures;
   const propertyAttributes = structuralMetadata.propertyAttributes;
-  // console.log("propertyTextures: ", propertyTextures);
-  // console.log("propertyAttributes: ", propertyAttributes);
   if (defined(propertyTextures)) {
     for (const propertyTexture of propertyTextures) {
       const metadataClass = propertyTexture.class;
@@ -45,9 +43,7 @@ function getMetadataProperty(structuralMetadata, className, propertyName) {
       const metadataClass = propertyAttribute.class;
       if (metadataClass.id === className) {
         const properties = propertyAttribute.properties;
-        // console.log("properties: ", properties);
         const property = properties[propertyName];
-        // console.log("property: ", property);
         if (defined(property)) {
           return property;
         }
